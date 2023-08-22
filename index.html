@@ -4,10 +4,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link   rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   <title>Document</title>
 </head>
 
 <body>
+    <header class="inner"><!-- header 始まり -->
+      <nav> <!--アイコンが並んでいる部分-->
+        <i class="fas fa-archway fa-3x logo"></i>
+        <ul class="nav-links">
+          <li><a href="#" class="contact-btn btn">Contact</a></li>
+        </ul>
+          <div class="burger"> <!--ハンバーガーメニュー線の部分-->
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+          </div>
+      </nav>
+    </header>    <!-- header 終わり -->
+
+
+    <main>
+      <div id="home">    <!-- home-content 始まり homeをIDで囲み画像を領域いっぱいに設定 -->
+        <section class="home-content">
+          <div class="inner"><!--画像内に文字を入れている部分-->
+            <h2 class="page-title">WEB PRODUCTION COMPANY</h2>
+            <p>DIRECTION,CONTENT MARKETING</p>
+          </div>
+        </section>
+      </div>    <!-- home-content 終わり-->
+
+
+
+      <section id="work-space">     <!-- work-space始まり -->
+        <div class="work-content inner"><!--画像と文字を横並びにしている部分-->
+            <div class="work-img">
+              <img class="work-logo" src="./img/pc/pc.png ">
+            </div>
+            <div class="work-font">
+              <h2>WORK</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et
+                  dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis
+                  aute irure dolor in repreh<br>enderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint</p>
+                  <!--brをつけて改行している-->
+          </div>
+        </div>
+      </section>    <!-- work-space終わり -->
+
+      <section id="skills">     <!-- skills始まり -->
+        <div class="skill-content inner"><!--画像をlist1と2に分けて横並びにしている部分-->
+          <h2 class="section-title">WE ARE SKILLS</h2>
+          <div class="skill-list1">
+            <div class="skillphot"><a href="#"><img src="./img/skills/skills_1.png" class="img1"></a></div>
+            <div class="skillphot"><a href="#"><img src="./img/skills/skills_2.png" class="img2"></a></div>
+            <div class="skillphot"><a href="#"><img src="./img/skills/skills_3.png" class="img3"></a></div>
+          </div>
+
+          <div class="skill-list2">
+            <div class="skillphot"><a href="#"><img src="./img/skills/skills_4.png" class="img4"></a></div>
+            <div class="skillphot"><a href="#"><img src="./img/skills/skills_5.png" class="img5"></a></div>
+            <div class="skillphot"><a href="#"><img src="./img/skills/skills_6.png" class="img6"></a></div>
+          </div>
+        </div>
+      </section><!-- skills終わり -->
+
+
+      <section id="section-plan"><!-- section-plan 始まり -->
+        <div class="inner">
+            <h2 class="section-title">SELECT PLAN</h2>
+            <table class="table-plan"><!---tableの開始-->
+              <tr>
+                <th>PLAN</th>
+                <th>BASIC PLAN</th>
+                <th>STANDARD PLAN</th>
+                <th>ENTERPRISE PLAN</th>
+              </tr>
+
+              <tr>
+                <td>PRICE</td>
+                <td>￥100,000</td>
+                <td>￥200,000</td>
+                <td>￥300,000</td>
+              </tr>
+
+              <tr>
+                <td>DELIVERY</td>
+                <td>Manuscript</td>
+                <td>HTML</td>
+                <td>Manuscript,HTML,PSD</td>
+              </tr>
+
+              <tr>
+                <td>ANALYSIS</td>
+                <td>○</td>
+                <td>○</td>
+                <td>○</td>
+              </tr>
+
+              <tr>
+                <td>IMPROVEMENT</td>
+                <td>×</td>
+                <td>○</td>
+                <td>○</td>
+              </tr>
+
+              <tr>
+                <td>DESIGN</td>
+                <td>×</td>
+                <td>×</td>
+                <td>○</td>
+              </tr>
+            </table>
+        </div>
+      </section>     <!-- section-plan 終わり -->
+
+
+      <section id="sns-zone">     <!-- sns-zone 始まり -->
+        <div class="inner">
+          <div class="sns-items"> <!--snsのロゴが入り一定の感覚を保ち横並びにしている-->
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-dribbble"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fa fa-envelope"></i>
+          </div>
+        </div>
+      </section>    <!-- sns-zone 始まり -->
+
+
+      <footer id="footer-content">    <!-- footer 始まり -->
+        <div class="footer-comment inner">
+          <p>Copyright(c)</p>
+        </div>
+      </footer>    <!-- footer終わり -->
+  </main>
   <!-- Wrokの部分のテキストはこちらを使ってください -->
   <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
   dolore magna

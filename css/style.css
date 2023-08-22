@@ -1,1 +1,294 @@
 @charset "utf-8";
+/* 共通パーツ始まり */
+
+body {
+  /* width: 100%; */
+
+}
+
+.inner {  /*innerで全てのsectionの幅を設定*/
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+/* 共通パーツ終わり */
+
+
+
+/* ヘッダー部分 */
+
+header {
+  width: 100%;
+}
+
+
+.fas { /*.fasの大きさの指定*/
+  width: 50px;
+  height: 50px;
+  padding: 15px 0;
+  color: #777;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.contact-btn {
+  list-style: none;
+  background: #6ba7ed;
+  color: #fff;
+  font-size: 12px;
+  padding: 12px 14px;
+  text-decoration: none;
+}
+
+
+.contact-btn:hover {
+  background: #333;
+  transition: 0.3s;/*カーソルを合わせた時に0.3秒かけて色が変わる様に指定*/
+}
+
+
+.burger {
+  display: none;
+  cursor: pointer;
+  background: #6ba7ed;
+  border-radius: 10px;
+}
+
+.line1  { /*ハンバーガーメニューの線の部分*/
+  width: 30px;
+  height: 5px;
+  background: #fafafa;
+  margin: 5px;
+}
+
+/* ヘッダー終わり */
+
+/* home-content */
+
+#home {
+  background:url(/img/keyvisual/keyvisual.jpg);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-title  {
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7ed;
+  text-align: center; /*インライン要素のため*/
+  padding-top: 400px;
+}
+
+
+.home-content p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin: 30px 0 0 0 ;
+  text-align: center;
+  padding-bottom: 400px;
+}
+
+/* home-content 終わり */
+
+
+
+/* work-content始まり */
+#work-space {
+  background: #e3f2fd;
+}
+
+.work-content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-img {
+  text-align: center;
+  flex-grow: 4;  /*flex-growを使いimgとh2,pの比率を6:4にしている*/
+}
+
+.work-logo {
+  width: 250px;
+}
+
+.work-font {
+  flex-grow: 6;
+}
+
+.work-font h2 {
+  font-size: 40px;
+  line-height: 10px;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+
+
+.work-font p {
+  font-size: 15px;
+  line-height: 18px;
+  word-break:break-all;
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* work-content終わり */
+
+
+/* skills始まり */
+#skills {
+  background: #fff;
+}
+
+
+.skill-list1 {
+  display: flex;
+  padding-bottom: 70px;
+  place-content: center;
+}
+
+.skill-list2 {
+  display: flex;
+  padding-bottom: 70px;
+  place-content: center;
+}
+
+
+
+.skillphot {
+  opacity: 0.7; /*元の画像の透明度を薄くしている*/
+}
+
+.skillphot:nth-last-child(odd) {
+  margin: 0 100px 0 100px;
+}
+
+
+.skillphot img {
+  width: 300px;
+  height: 300px;
+}
+
+.skillphot:hover {
+  opacity: 1; /*skillphotにカーソルが重なった時に透明度が元の透明度に戻る*/
+}
+
+/* skills終わり */
+
+/* PLAN始まり */
+
+#section-plan {
+  background: #d0dfea;
+  padding-bottom: 50px;
+}
+
+.table-plan {
+  table-layout: fixed;  /*全ての列幅を均等にするためにfixedを適用 autoでは文字数などで幅が変わる*/
+  margin: 0 auto;
+}
+
+.table-plan th  {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px;
+  background: #6ba7ed;
+  border-left: 2px solid #fff;
+  text-align: center;
+}
+
+.table-plan td {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  border-left: 2px solid #fff;
+  text-align: center;
+}
+
+.table-plan tr:nth-child(even){
+  background: #f9f9f9;
+}
+
+
+.table-plan tr:nth-child(odd){
+  background: #e0efff;
+}
+/*ntn:childを使い奇数、偶数行の色分けを行う*/
+
+
+.table-plan th:first-child{
+  border: none;
+}
+
+/* PLAN終わり */
+
+
+/* sns-zone始まり */
+#sns-zone {
+  height: auto;
+  background: #e3f2fd;
+}
+
+.sns-items {
+  padding: 200px 0 200px 0 ;
+  display: flex;
+  justify-content: center;
+}
+
+
+.fab, .fa {
+  width: 185px;
+  color: #8c8c8c;
+  font-size: 40px;
+  overflow: hidden;
+  padding: 25px 0 25px 0;
+  text-align: center;
+}
+
+
+.sns-item:hover {
+  background: #fff;
+  transition: 0.5s; /*カーソルがあった時に0.5秒かけて白くなる*/
+}
+
+table {
+  width: 100%;
+}
+
+/* sns-zone終わり */
+
+/* footer始まり */
+
+#footer-content {
+  background: #cfd8bd;
+
+}
+
+.footer-comment {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footer-comment p {
+  padding: 20px 0 25px 0;
+  font-size: 10px;
+  letter-spacing: 0.5px; /*文字と文字との間の幅を指定*/
+  margin-right: 10px;
+}
+/* footer終わり */
