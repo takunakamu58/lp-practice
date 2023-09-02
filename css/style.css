@@ -1,11 +1,5 @@
 @charset "utf-8";
 /* 共通パーツ始まり */
-
-body {
-  /* width: 100%; */
-
-}
-
 .inner {  /*innerで全てのsectionの幅を設定*/
   width: 1100px;
   max-width: 100%;
@@ -172,21 +166,21 @@ nav {
 
 
 
-.skillphot {
+.skill-photo {
   opacity: 0.7; /*元の画像の透明度を薄くしている*/
 }
 
-.skillphot:nth-last-child(odd) {
+.skill-photo:nth-last-child(odd) {
   margin: 0 100px 0 100px;
 }
 
 
-.skillphot img {
+.skill-photo img {
   width: 300px;
   height: 300px;
 }
 
-.skillphot:hover {
+.skill-photo:hover {
   opacity: 1; /*skillphotにカーソルが重なった時に透明度が元の透明度に戻る*/
 }
 
