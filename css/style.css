@@ -152,27 +152,28 @@ nav {
 }
 
 
-.skill-list1 {
+.skill-list {
   display: flex;
-  padding-bottom: 70px;
-  place-content: center;
+  flex-wrap: wrap;
+  justify-content:center;
 }
-
-.skill-list2 {
-  display: flex;
-  padding-bottom: 70px;
-  place-content: center;
-}
-
-
 
 .skill-photo {
   opacity: 0.7; /*元の画像の透明度を薄くしている*/
+  margin-left: 100px;
+  margin-top: 100px;
+  margin: 0 100px 100px 0;
+  width: calc(33.3333333%-34px);
 }
 
-.skill-photo:nth-last-child(odd) {
-  margin: 0 100px 0 100px;
+.skill-photo:nth-child(3n) {
+  margin-right: 0;
 }
+
+.skill-photo:nth-child(n+4) {
+  margin-bottom: 70px;
+}
+
 
 
 .skill-photo img {
