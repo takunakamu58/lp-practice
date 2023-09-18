@@ -24,7 +24,6 @@ body {
 
 header {
   width: 100%;
-  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,6 +36,7 @@ header {
   width: 50px;
   height: 50px;
   color: #777;
+  margin: 15px 0
 }
 
 nav {
@@ -134,12 +134,12 @@ nav {
 
 .work-font {
   flex-grow: 6;
+  margin-top: 20px;
 }
 
 .work-font h2 {
   font-size: 40px;
   line-height: 10px;
-  margin-top: 20px;
   text-align: center;
   letter-spacing: 10px;
 }
@@ -160,7 +160,7 @@ nav {
 /* skills始まり */
 .skills {
   background: #fff;
-  padding-top: 50px;
+  padding: 50px 0 70px 0;
 }
 
 
@@ -174,6 +174,7 @@ nav {
   opacity: 0.7; /*元の画像の透明度を薄くしている*/
   margin: 0 100px 100px 0;
   width: calc(33.33% - 200px / 3);
+  transition: 1s;
 }
 
 .skill-photo:nth-child(3n) {
@@ -181,7 +182,7 @@ nav {
 }
 
 .skill-photo:nth-child(n+4) {
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 
 
