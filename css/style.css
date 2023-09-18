@@ -160,8 +160,6 @@ nav {
 
 .skill-photo {
   opacity: 0.7; /*元の画像の透明度を薄くしている*/
-  margin-left: 100px;
-  margin-top: 100px;
   margin: 0 100px 100px 0;
 }
 
