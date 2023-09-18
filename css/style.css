@@ -161,13 +161,14 @@ nav {
 .skill-photo {
   opacity: 0.7; /*元の画像の透明度を薄くしている*/
   margin: 0 100px 100px 0;
+  width: calc(33.33% - 200px / 3);
 }
 
 .skill-photo:nth-child(3n) {
   margin-right: 0;
 }
 
-.skill-photo:nth-child(n+3) {
+.skill-photo:nth-child(n+4) {
   margin-bottom: 70px;
 }
 
