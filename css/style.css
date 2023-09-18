@@ -20,13 +20,18 @@
 
 header {
   width: 100%;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 
-.fas { /*.fasの大きさの指定*/
+.logo { /*.fasの大きさの指定*/
   width: 50px;
   height: 50px;
-  padding: 15px 0;
   color: #777;
 }
 
@@ -72,11 +77,12 @@ nav {
 
 /* home-content */
 
-#home {
+.home {
   background:url(../img/keyvisual/keyvisual.jpg);
   min-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 80px;
 }
 
 .page-title  {
@@ -233,7 +239,7 @@ nav {
 
 
 /* sns-zone始まり */
-#sns-zone {
+.sns-zone {
   height: auto;
   background: #e3f2fd;
 }
@@ -268,7 +274,7 @@ table {
 
 /* footer始まり */
 
-#footer-content {
+.footer-content {
   background: #cfd8bd;
 
 }
@@ -282,6 +288,5 @@ table {
   padding: 20px 0 25px 0;
   font-size: 10px;
   letter-spacing: 0.5px; /*文字と文字との間の幅を指定*/
-  margin-right: 10px;
 }
 /* footer終わり */
