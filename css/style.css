@@ -163,14 +163,13 @@ nav {
   margin-left: 100px;
   margin-top: 100px;
   margin: 0 100px 100px 0;
-  width: calc(33.3333333%-34px);
 }
 
 .skill-photo:nth-child(3n) {
   margin-right: 0;
 }
 
-.skill-photo:nth-child(n+4) {
+.skill-photo:nth-child(n+3) {
   margin-bottom: 70px;
 }
 
