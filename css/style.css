@@ -182,7 +182,7 @@ nav {
   margin-right: 0;
 }
 
-.skill-photo:nth-child(n+4) {
+.skill-photo:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
 
