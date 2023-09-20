@@ -206,6 +206,10 @@ nav {
   padding: 50px 0;
 }
 
+table {
+  width: 100%;
+}
+
 .table-plan {
   table-layout: fixed;  /*全ての列幅を均等にするためにfixedを適用 autoでは文字数などで幅が変わる*/
   margin: 0 auto;
@@ -258,6 +262,10 @@ nav {
   justify-content: center;
 }
 
+.sns-items a:hover {
+  background: #fff;
+  transition: 0.5s; /*カーソルがあった時に0.5秒かけて白くなる*/
+}
 
 .fab, .fa {
   width: 185px;
@@ -266,16 +274,6 @@ nav {
   overflow: hidden;
   padding: 25px 0 25px 0;
   text-align: center;
-}
-
-
-.sns-item:hover {
-  background: #fff;
-  transition: 0.5s; /*カーソルがあった時に0.5秒かけて白くなる*/
-}
-
-table {
-  width: 100%;
 }
 
 /* sns-zone終わり */
