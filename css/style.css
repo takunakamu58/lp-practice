@@ -140,7 +140,6 @@ nav {
 
 .work-font h2 {
   font-size: 40px;
-  line-height: 10px;
   text-align: center;
   letter-spacing: 10px;
 }
@@ -251,12 +250,11 @@ table {
 
 /* sns-zone始まり */
 .sns-zone {
-  height: auto;
   background: #e3f2fd;
+  padding: 200px 0;
 }
 
 .sns-items {
-  padding: 200px 0;
   display: flex;
   justify-content: center;
 }
@@ -280,8 +278,8 @@ table {
 /* footer始まり */
 
 .footer-content {
-  background: #cfd8bd;
-
+  background: #cfd8dc;
+  padding: 20px 0 25px 0;
 }
 
 .footer-comment {
@@ -290,7 +288,6 @@ table {
 }
 
 .footer-comment p {
-  padding: 20px 0 25px 0;
   font-size: 10px;
   letter-spacing: 0.5px; /*文字と文字との間の幅を指定*/
 }
