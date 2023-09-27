@@ -63,6 +63,13 @@ nav {
   transition: 0.3s;/*カーソルを合わせた時に0.3秒かけて色が変わる様に指定*/
 }
 
+/*レスポンシブcontact-btn開始*/
+@media screen and (max-width:767px){
+  .contact-btn {
+      display: none;
+  }
+}
+/*レスポンシブcontact-btn終了*/
 
 .burger {
   display: none;
@@ -70,6 +77,16 @@ nav {
   background: #6ba7ed;
   border-radius: 10px;
 }
+
+/*レスポンシブburger開始*/
+@media screen and (max-width:767px){
+  .burger {
+      display: block;
+      margin-right: 10px;
+  }
+}
+/*レスポンシブburger終了*/
+
 
 .line1  { /*ハンバーガーメニューの線の部分*/
   width: 30px;
@@ -93,12 +110,34 @@ nav {
   padding: 400px 0;
 }
 
+/*レスポンシブhome-content開始*/
+@media screen and (max-width: 1199px) {
+  .home-content {
+    padding: 250px 0;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .home-content {
+      padding: 200px 0;
+  }
+}
+
+/*レスポンシブhome-content終了*/
+
 .page-title  {
   font-size: 65px;
   font-weight: 700;
   color: #6ba7ed;
   text-align: center; /*インライン要素のため*/
 }
+
+@media screen and (max-width:767px) {
+  .home-content {
+    font-size: 40px
+  }
+}
+
 
 
 .home-content p {
@@ -108,6 +147,14 @@ nav {
   margin-top: 30px;
   text-align: center;
 }
+
+/* .home-content p開始 */
+@media screen and (max-width:767px) {
+  .home-content p {
+    font-size: 30px
+  }
+}
+/* .home-content p 終了 */
 
 /* home-content 終わり */
 
@@ -123,6 +170,16 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+/*レスポンシブwork-content開始*/
+@media screen and (max-width: 1199px) {
+  .work-content {
+      width: 100%;
+      padding-bottom: 50px;
+      display: block;
+  }
+}
+/*レスポンシブwork-content終了*/
 
 .work-img {
   text-align: center;
@@ -153,6 +210,14 @@ nav {
   margin-top: 35px;
   text-align: center;
 }
+/*レスポンシブwork-font br開始*/
+@media screen and (max-width: 1199px) {
+  .work-font br {
+    display: none;
+  }
+}
+/*レスポンシブwork-font br終了*/
+
 
 /* work-content終わり */
 
@@ -163,11 +228,19 @@ nav {
   padding: 50px 0 70px 0;
 }
 
-
 .skill-list {
   display: flex;
   flex-wrap: wrap;
 }
+
+/*レスポンシブskill-list開始*/
+@media screen and (max-width: 1199px) {
+  .skill-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*レスポンシブskill-list開始*/
 
 .skill-photo {
   opacity: 0.7; /*元の画像の透明度を薄くしている*/
@@ -184,7 +257,21 @@ nav {
   margin-bottom: 0;
 }
 
+/*レスポンシブskill-photo開始*/
+@media screen and (max-width: 1199px) {
+  .skill-photo {
+    margin: 0;
+  }
 
+  .skill-photo:nth-last-child(3n) {
+    margin-top: 80px;
+  }
+
+  .skill-photo:first-child {
+    margin-top: 0;
+  }
+}
+/*レスポンシブskill-photo終了*/
 
 .skill-photo img {
   width: 300px;
@@ -222,6 +309,15 @@ table {
   text-align: center;
 }
 
+/*レスポンシブ.table-plan th開始*/
+@media screen and (max-width: 767px) {
+  .table-plan th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+/*レスポンシブ.table-plan th 終了*/
+
 .table-plan td {
   padding: 10px;
   font-size: 16px;
@@ -229,6 +325,14 @@ table {
   border-left: 2px solid #fff;
   text-align: center;
 }
+
+/*レスポンシブ.table-plan td開始*/
+@media screen and (max-width: 767px) {
+  .table-plan th {
+    font-size: 12px;
+  }
+}
+/*レスポンシブ.table-plan td終了*/
 
 .table-plan tr:nth-child(even){
   background: #f9f9f9;
@@ -254,15 +358,41 @@ table {
   padding: 200px 0;
 }
 
+/*レスポンシブsns-zone 開始*/
+
+@media screen and (max-width:767px) {
+  .sns-zone {
+      padding: 50px 15px 50px 15px;
+      /* width: 100%; */
+  }
+}
+
+/*レスポンシブsns-zone 終了*/
+
 .sns-items {
   display: flex;
   justify-content: center;
+}
+
+/*レスポンシブsns-items 開始*/
+
+@media screen and (max-width:767px) {
+  .sns-items {
+    display: block;
+  }
+}
+/*レスポンシブsns-items 終了*/
+
+.sns-items a {
+  transition: 0.5s;
 }
 
 .sns-items a:hover {
   background: #fff;
   transition: 0.5s; /*カーソルがあった時に0.5秒かけて白くなる*/
 }
+
+
 
 .fab, .fa {
   width: 185px;
@@ -272,6 +402,16 @@ table {
   padding: 25px 0 25px 0;
   text-align: center;
 }
+
+/*レスポンシブ.fab , fa開始*/
+
+@media screen and (max-width:767px) {
+  .fab , .fa {
+    padding: 50px 0 50px 0;
+    width: 100%;
+  }
+}
+/*レスポンシブ.fab , fa終了*/
 
 /* sns-zone終わり */
 
