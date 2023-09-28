@@ -81,8 +81,7 @@ nav {
 /*レスポンシブburger開始*/
 @media screen and (max-width:767px){
   .burger {
-      display: block;
-      margin-right: 10px;
+    display: block;
   }
 }
 /*レスポンシブburger終了*/
@@ -132,13 +131,13 @@ nav {
   text-align: center; /*インライン要素のため*/
 }
 
+/*レスポンシブpage-title開始*/
 @media screen and (max-width:767px) {
   .home-content {
     font-size: 40px
   }
 }
-
-
+/*レスポンシブpage-title終了*/
 
 .home-content p {
   font-size: 40px;
@@ -174,9 +173,9 @@ nav {
 /*レスポンシブwork-content開始*/
 @media screen and (max-width: 1199px) {
   .work-content {
-      width: 100%;
-      padding-bottom: 50px;
-      display: block;
+    display: block;
+    width: 100%;
+    padding-bottom: 50px;
   }
 }
 /*レスポンシブwork-content終了*/
@@ -210,6 +209,8 @@ nav {
   margin-top: 35px;
   text-align: center;
 }
+
+
 /*レスポンシブwork-font br開始*/
 @media screen and (max-width: 1199px) {
   .work-font br {
@@ -255,6 +256,7 @@ nav {
 .skill-photo:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
+/* 最後の要素から３つに対して（以前）適用される */
 
 /*レスポンシブskill-photo開始*/
 @media screen and (max-width: 1199px) {
@@ -361,8 +363,7 @@ table {
 
 @media screen and (max-width:767px) {
   .sns-zone {
-      padding: 50px 15px 50px 15px;
-      /* width: 100%; */
+    padding: 50px 15px 50px 15px;
   }
 }
 
