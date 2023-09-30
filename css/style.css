@@ -133,7 +133,7 @@ nav {
 
 /*レスポンシブpage-title開始*/
 @media screen and (max-width:767px) {
-  .home-content {
+  .page-title {
     font-size: 40px
   }
 }
@@ -165,6 +165,15 @@ nav {
   padding-top: 50px;
 }
 
+/*レスポンシブwork-space開始*/
+@media screen and (max-width: 1199px) {
+  .work-space {
+    padding-bottom: 50px;
+  }
+}
+/*レスポンシブwork-space終了*/
+
+
 .work-content {
   display: flex;
   justify-content: space-between;
@@ -175,7 +184,6 @@ nav {
   .work-content {
     display: block;
     width: 100%;
-    padding-bottom: 50px;
   }
 }
 /*レスポンシブwork-content終了*/
@@ -381,6 +389,7 @@ table {
     display: block;
   }
 }
+
 /*レスポンシブsns-items 終了*/
 
 .sns-items a {
@@ -392,6 +401,11 @@ table {
   transition: 0.5s; /*カーソルがあった時に0.5秒かけて白くなる*/
 }
 
+@media screen and (max-width:767px) {
+  .sns-items a:hover {
+    display: block;
+  }
+}
 
 
 .fab, .fa {
@@ -403,6 +417,7 @@ table {
   text-align: center;
 }
 
+
 /*レスポンシブ.fab , fa開始*/
 
 @media screen and (max-width:767px) {
@@ -411,6 +426,8 @@ table {
     width: 100%;
   }
 }
+
+
 /*レスポンシブ.fab , fa終了*/
 
 /* sns-zone終わり */
