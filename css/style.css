@@ -74,8 +74,9 @@ nav {
 .burger {
   display: none;
   cursor: pointer;
-  background: #6ba7ed;
-  border-radius: 10px;
+  background: #fff;
+  border:  1px solid #e6e6e6;
+  border-radius: 5px;
 }
 
 /*レスポンシブburger開始*/
@@ -88,9 +89,9 @@ nav {
 
 
 .line1  { /*ハンバーガーメニューの線の部分*/
-  width: 30px;
+  width: 35px;
   height: 5px;
-  background: #fafafa;
+  background: #e6e6e6;
   margin: 5px;
 }
 
@@ -285,7 +286,10 @@ nav {
 .skill-photo img {
   width: 300px;
   height: 300px;
+  vertical-align: top;
 }
+
+/* 画像を含むインライン要素がベースラインに配置されているため小さな余白ができるので注意 */
 
 .skill-photo:hover {
   opacity: 1; /*skillphotにカーソルが重なった時に透明度が元の透明度に戻る*/
